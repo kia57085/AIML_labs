@@ -1,10 +1,9 @@
 def jaccard_similarity(set_x, set_y):
     intersection = 0
 
-    for lhv in set_x:
-        for rhv in set_y:
-            if lhv == rhv:
-                intersection += 1
+    for num in set_x:
+        if num in set_y:
+            intersection += 1
 
     union = len(set_x) + len(set_y) - intersection
 
